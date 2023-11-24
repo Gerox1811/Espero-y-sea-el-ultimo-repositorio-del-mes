@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ userProfile.username }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Aquí colocas la información detallada del usuario -->
+  <ion-avatar aria-hidden="true" slot="start">
+    <img [src]="userProfile.profileImageURL" />
+  </ion-avatar>
+  <!-- Otros detalles del perfil -->
+  <ion-item>
+    <ion-label>{{ userProfile.name }}</ion-label>
+  </ion-item>
+  <!-- Más detalles del perfil -->
+</ion-content>

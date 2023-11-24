@@ -1,0 +1,54 @@
+<ion-toolbar class="text-overlay">
+
+  <ion-buttons slot="secondary">
+    <ion-button [routerLink]="['/tabs/tab2']">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>To Job</ion-title>
+
+
+</ion-toolbar>
+
+
+
+
+
+
+
+<ion-content [fullscreen]="true" scrollY="true">
+  <!-- Iterar sobre los videos -->
+  <div class="video-list" #videoContainer>
+    <div *ngFor="let video of videos" class="video-container">
+      <!-- Mostrar el video -->
+      <video #videoPlayer width="320" height="240" (click)="togglePlayPause(videoPlayer)">
+        <source [src]="video.videoURL" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+
+      <!-- Información del usuario y acciones -->
+      <ion-toolbar class="text-overlay-f">
+        <ion-row>
+          <ion-avatar>
+            <img [src]="video.userProfileImage" alt="Imagen de usuario">
+          </ion-avatar>
+          <h1 style="font-size: 20px; padding: 0 15px;">{{ video.username }}</h1>
+          <ion-col><ion-button shape="round" fill="outline">Seguir</ion-button></ion-col>
+          <ion-icon name="heart-outline" style="font-size: 40px;"></ion-icon>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>{{ video.description }}</ion-col>
+          <ion-icon name="ellipsis-vertical" id="open-modal-a"></ion-icon>
+        </ion-row>
+
+        <ion-col>
+          #{{ video.hashtag }}
+        </ion-col>
+        
+      </ion-toolbar>
+
+ 
+    </div>
+  </div>
+</ion-content>

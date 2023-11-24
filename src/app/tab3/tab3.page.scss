@@ -1,0 +1,44 @@
+#container-header{
+    display: flex;
+}
+
+ .icon{
+    padding: 20px 10px;
+    font-size: 40px;
+}
+
+
+.profile-pic {
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: 100px; /* Ajusta el tamaño de la imagen */
+  border-radius: 50%; /* Esto convierte la imagen en un círculo */
+  overflow: hidden; /* Asegura que la imagen respete el borde circular */
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Opcional: si deseas agregar un borde */
+.profile-pic {
+  border: 3px solid #fff; /* Color y grosor del borde */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); /* Sombra opcional */
+}
+
+
+ ion-grid ion-row ion-col ion-icon{
+    font-size: 50px;
+}
+
+
+ion-grid ion-row ion-col{
+    font-size: 15px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+ion-card-content ion-row ion-col ion-icon{
+    font-size: 40px;
+    padding: 10px 0;
+}
