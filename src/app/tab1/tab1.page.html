@@ -28,7 +28,7 @@
 
       <!-- Información del usuario y acciones -->
       <ion-toolbar class="text-overlay-f">
-        <ion-row >
+        <ion-row [routerLink]="['/user-perfil', video.userId]">
           <ion-avatar>
             <img [src]="video.userProfileImage" alt="Imagen de usuario">
           </ion-avatar>
