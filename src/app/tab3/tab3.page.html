@@ -71,7 +71,6 @@
         <ion-row>
           <ion-col size="6" *ngFor="let video of userVideos">
             <div class="video-container" (click)="playAndToggle(video.videoURL, $event)">
-
               <video width="100%" height="100%" controls muted>
                 <source [src]="video.videoURL" type="video/mp4">
                 Tu navegador no soporta el elemento de video.

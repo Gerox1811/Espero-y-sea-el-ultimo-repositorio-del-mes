@@ -28,11 +28,14 @@
 
       <!-- Información del usuario y acciones -->
       <ion-toolbar class="text-overlay-f">
-        <ion-row>
+        <ion-row >
           <ion-avatar>
             <img [src]="video.userProfileImage" alt="Imagen de usuario">
           </ion-avatar>
           <h1 style="font-size: 20px; padding: 0 15px;">{{ video.username }}</h1>
+        </ion-row>
+
+        <ion-row>
           <ion-col><ion-button shape="round" fill="outline">Seguir</ion-button></ion-col>
           <ion-icon name="heart-outline" style="font-size: 40px;"></ion-icon>
         </ion-row>
@@ -47,8 +50,6 @@
         </ion-col>
         
       </ion-toolbar>
-
- 
     </div>
   </div>
 </ion-content>
